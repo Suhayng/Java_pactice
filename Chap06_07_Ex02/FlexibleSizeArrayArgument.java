@@ -7,8 +7,8 @@ public class FlexibleSizeArrayArgument {
 	public static void main(String[] args) {
 		// 배열의 길이가 고정되지 않고 가변길인 경우
 		// 1. method1 ( int...values)	<== 가변 길이를 처리하는 input 매개 변수 설정
-		method1 ();
-		method1 (1,2);
+		method1 ();						// 메소드 오버라이딩 : 메소드명은 모두 동일, 매개 변수의 타입, 개수에 따라 
+		method1 (1,2);					// 해당 메소드 출력	
 		method1 (1,2,3);
 		method1 (1,2,3,4);
 		method1 (1,2,3,4,5);
@@ -36,7 +36,7 @@ public class FlexibleSizeArrayArgument {
 		}
 		
 	}	
-	static void method2 (String...values) {
+	static void method2 (String...values) {	// values 변수는 배열을 담은 변수이다.
 		System.out.println("=====Arrays.toString()=====");
 		System.out.println(Arrays.toString(values));
 		System.out.println();
